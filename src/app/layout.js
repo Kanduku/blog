@@ -1,7 +1,7 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Navbar from "./Components/navbar/Navbar";
-import Footer from "./Components/footer/footer";
+
 import { ThemeContextProvider } from '@/context/ThemeContext';
 import ThemeProvoider from '@/provider/ThemeProvoider';
 
@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
       <div className='wrapper'>
         <Navbar />
       {children}
-<Footer />
+
 </div>
       </div>
       </ThemeProvoider>
